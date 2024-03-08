@@ -92,9 +92,6 @@ const searchData = (req, res) => {
 };
 
 //eXPORTING ALL THE FUNCTION TO INDEX FILE..
-//eXPORTING ALL THE FUNCTION TO INDEX FILE..
-//eXPORTING ALL THE FUNCTION TO INDEX FILE..
-//eXPORTING ALL THE FUNCTION TO INDEX FILE..
 module.exports = {
   studentSave,
   studentdisplay,
