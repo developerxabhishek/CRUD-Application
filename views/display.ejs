@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="aqua">
+    <a href="/" style="text-decoration: none; font-size: 25px; margin-right: 30px;">Home</a>
+    <a href="/insert" style="text-decoration: none; font-size: 25px; margin-right: 30px;">Insert Records</a>
+    <a href="/display" style="text-decoration: none; font-size: 25px; margin-right: 30px;">Display Records</a>
+    <a href="/searchrecord" style="text-decoration: none; font-size: 25px; margin-right: 30px;">Search</a>
+    <hr size="5" color="red">
+    <hr size="5" color="blue">
+    <center>
+        <h1 style="text-decoration: underline;">This is DisplayPage of our website...</h1>
+        <table border="2px solid black " bgcolor="yellow" style="font-size: 25px; width: 900px; text-align: center;">
+            <thead>
+                <th>ID </th>
+                <th>Name </th>
+                <th>City </th>
+                <th>Fees </th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </thead>
+            <% studata.forEach((key)=>{ %>
+                <tr>
+                    <td><%=key.rollno%></td>
+                    <td><%=key.name%></td>
+                    <td><%=key.city%></td>
+                    <td><%=key.fees%></td>
+                    <td>
+                            <a href="/recdel/<%=key.id%>" style="text-decoration: none;">DELETE</a>
+                    </td>
+                    <td>
+                        <a href="/recedit/<%=key.id%>" style="text-decoration: none;" >Edit</a>
+                </td>
+               </tr>
+               <% }) %>
+        </table>
+    </center>
+</body>
+</html>

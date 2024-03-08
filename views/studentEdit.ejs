@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="red" >
+    <a href="/">home</a>||
+    <a href="/insert">Insert Records</a>||
+    <a href="/display">Display Records</a>||
+    <a href="/searchrecord">Search</a>
+    <hr size="5" color="red">
+    <hr size="5" color="blue">
+    <h1>Update Data</h1>
+    <form action="/editUpdateSAve" method="post">
+        <input type="hidden" value="<%=studata[0]._id%>" name="userid">
+        Edit ID <input type="text" value="<%=studata[0].rollno%>" name="roll"> <br>
+        Edit name <input type="text" value="<%=studata[0].name%>" name="nm"> <br>
+        Edit city <input type="text" value="<%=studata[0].city%>" name="city"> <br>
+        Edit fees <input type="text" value="<%=studata[0].fees%>" name="fees"> <br>
+        <button>Data Update</button>
+    </form>
+</body>
+</html>
